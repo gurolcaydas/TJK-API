@@ -42,6 +42,9 @@ class TJK
                 'AD'=>$item['AD'],
                 'YER'=>$item['YER'],
                 'GUN'=>$item['GUN'],
+                'KOD'=>$item['KOD'],
+                'SIRA'=>$item['SIRA'],
+                'GECE'=>$item['GECE'],
                 'RACE'=>$this->getRaces($today,$item['KEY'])['data'],
             );
             array_push($races,$data);
@@ -126,6 +129,9 @@ class TJK
                 'AD'=>$item['AD'],
                 'YER'=>$item['YER'],
                 'GUN'=>$item['GUN'],
+                'KOD'=>$item['KOD'],
+                'SIRA'=>$item['SIRA'],
+                'GECE'=>$item['GECE'],
                 'RACE'=>$this->getResult($today,$item['KEY'])['data'],
             );
             array_push($races,$data);
@@ -159,6 +165,9 @@ class TJK
                 'AD'=>$item['AD'],
                 'YER'=>$item['YER'],
                 'GUN'=>$item['GUN'],
+                'KOD'=>$item['KOD'],
+                'SIRA'=>$item['SIRA'],
+                'GECE'=>$item['GECE'],
                 'RACE'=>$this->getResult($date,$item['KEY'])['data'],
             );
             array_push($races,$data);
