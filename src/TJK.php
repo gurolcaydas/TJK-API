@@ -76,6 +76,9 @@ class TJK
                 'AD'=>$item['AD'],
                 'YER'=>$item['YER'],
                 'GUN'=>$item['GUN'],
+                'KOD'=>$item['KOD'],
+                'SIRA'=>$item['SIRA'],
+                'GECE'=>$item['GECE'],
                 'RACE'=>$this->getRaces($date,$item['KEY'])['data'],
             );
             array_push($races,$data);
