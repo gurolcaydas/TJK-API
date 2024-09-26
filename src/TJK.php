@@ -37,14 +37,14 @@ class TJK
 
         foreach ($hippodromes['data'] as $item)
         {
-            $data=array(
-                'KEY'=>$item['KEY'],
-                'AD'=>$item['AD'],
-                'YER'=>$item['YER'],
-                'GUN'=>$item['GUN'],
-                'KOD'=>$item['KOD'],
-                'SIRA'=>$item['SIRA'],
-                'GECE'=>$item['GECE'],
+            $data=array(                
+                'KEY'  => $item['KEY'],
+                'KOD'  => isset($item['KOD']) ? $item['KOD'] : null,
+                'AD'   => $item['AD'],
+                'YER'  => $item['YER'],
+                'GUN'  => $item['GUN'],
+                'SIRA' => isset($item['SIRA']) ? $item['SIRA'] : null,
+                'GECE' => isset($item['GECE']) ? $item['GECE'] : false,  
                 'RACE'=>$this->getRaces($today,$item['KEY'])['data'],
             );
             array_push($races,$data);
@@ -75,13 +75,13 @@ class TJK
         foreach ($hippodromes['data'] as $item)
         {
             $data=array(
-                'KEY'=>$item['KEY'],
-                'AD'=>$item['AD'],
-                'YER'=>$item['YER'],
-                'GUN'=>$item['GUN'],
-                'KOD'=>$item['KOD'],
-                'SIRA'=>$item['SIRA'],
-                'GECE'=>$item['GECE'],
+                'KEY'  => $item['KEY'],
+                'KOD'  => isset($item['KOD']) ? $item['KOD'] : null,
+                'AD'   => $item['AD'],
+                'YER'  => $item['YER'],
+                'GUN'  => $item['GUN'],
+                'SIRA' => isset($item['SIRA']) ? $item['SIRA'] : null,
+                'GECE' => isset($item['GECE']) ? $item['GECE'] : false, 
                 'RACE'=>$this->getRaces($date,$item['KEY'])['data'],
             );
             array_push($races,$data);
@@ -125,13 +125,13 @@ class TJK
         foreach ($hippodromes['data'] as $item)
         {
             $data=array(
-                'KEY'=>$item['KEY'],
-                'AD'=>$item['AD'],
-                'YER'=>$item['YER'],
-                'GUN'=>$item['GUN'],
-                'KOD'=>$item['KOD'],
-                'SIRA'=>$item['SIRA'],
-                'GECE'=>$item['GECE'],
+                'KEY'  => $item['KEY'],
+                'KOD'  => isset($item['KOD']) ? $item['KOD'] : null,
+                'AD'   => $item['AD'],
+                'YER'  => $item['YER'],
+                'GUN'  => $item['GUN'],
+                'SIRA' => isset($item['SIRA']) ? $item['SIRA'] : null,
+                'GECE' => isset($item['GECE']) ? $item['GECE'] : false,  
                 'RACE'=>$this->getResult($today,$item['KEY'])['data'],
             );
             array_push($races,$data);
@@ -161,13 +161,13 @@ class TJK
         foreach ($hippodromes['data'] as $item)
         {
             $data=array(
-                'KEY'=>$item['KEY'],
-                'AD'=>$item['AD'],
-                'YER'=>$item['YER'],
-                'GUN'=>$item['GUN'],
-                'KOD'=>$item['KOD'],
-                'SIRA'=>$item['SIRA'],
-                'GECE'=>$item['GECE'],
+                'KEY'  => $item['KEY'],
+                'KOD'  => isset($item['KOD']) ? $item['KOD'] : null,
+                'AD'   => $item['AD'],
+                'YER'  => $item['YER'],
+                'GUN'  => $item['GUN'],
+                'SIRA' => isset($item['SIRA']) ? $item['SIRA'] : null,
+                'GECE' => isset($item['GECE']) ? $item['GECE'] : false,  
                 'RACE'=>$this->getResult($date,$item['KEY'])['data'],
             );
             array_push($races,$data);
